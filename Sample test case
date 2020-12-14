@@ -1,0 +1,39 @@
+Sample test case
+
+Sample Input Format{JSON}
+
+{credit card number: mandatory string , card holder name: mandatory string, expiry date: mandatory string "YYYY,MM,DD" , security code :Optional string, amount:mandatory float, Is expensive payment gateway available : "Yes/No", Is premium payment available: "Yes/No"}
+
+VALID TEST CASE:-
+
+{"credit_card_number":"4123456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,21","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"Yes"}  
+
+{"credit_card_number":"4123456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"Yes"}  
+
+{"credit_card_number":"4123456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"Yes"}
+
+{"credit_card_number":"4123456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"","amount":20.00,"expensive_payment_available":"No","premium_payment_available":"Yes"}
+
+{"credit_card_number":"4123456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"215","amount":25.00,"expensive_payment_available":"Yes","premium_payment_available":"Yes"}
+
+{"credit_card_number":"4123456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"521","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"No"}
+
+
+INVALID TEST CASE:-
+
+{"credit_card_number":"0423456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,24","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"", "card_holder":"kaustubh","expiry_date":"2020,12,24","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"0423456789123456", "card_holder":"","expiry_date":"2020,12,24","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"0423456789123456", "card_holder":"kaustubh","expiry_date":"2020,11,1","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"0423456789123456", "card_holder":"kaustubh","expiry_date":"","security_code":"255","amount":2550.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"0423456789123456", "card_holder":"kaustubh","expiry_date":"2020-12-24","security_code":"255","amount":0.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"0423456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"265","amount":-1.00,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
+{"credit_card_number":"0423456789123456", "card_holder":"kaustubh","expiry_date":"2020,12,14","security_code":"255","amount":255,"expensive_payment_available":"No","premium_payment_available":"yes"}
+
