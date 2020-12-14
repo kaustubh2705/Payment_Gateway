@@ -68,13 +68,14 @@ class Payment:
                     print("Payment is processed using Premium Payment Gateway")
                     break
                 else:
+
+                    if n==0:
+                        print("Retry 1")
+                    if n==1:
+                        print("Retry 2")
+                    if n==2:
+                        print("Retry 3")
                     n += 1
-            if n==0:
-                print("Retry 1")
-            if n==1:
-                print("Retry 2")
-            if n==2:
-                print("Retry 3")
             if n == 3:
                 print(status.HTTP_500_INTERNAL_SERVER_ERROR)
                 abort(500)
